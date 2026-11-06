@@ -83,6 +83,10 @@ cat template/01-identity.md template/02-group-rules.md \
 
 ---
 
+## 遇到问题
+
+规则不生效、还是客服腔、话说太短？先看 [TROUBLESHOOTING.md](TROUBLESHOOTING.md)。
+
 ## 注意事项
 
 - 规则里带**边界条款**（未成年人、隐私、违法），别删——删了迟早出事。
