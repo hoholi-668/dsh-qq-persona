@@ -1,18 +1,42 @@
 # dsh-qq-persona
 
-> 让 AI 在群里**不像客服**，像一个真的群友。
-> 这不是代码，是一套经过真实群聊打磨的规则模板——**最贵的部分不是文笔，是「不要做什么」。**
+<p>
+  <img alt="license" src="https://img.shields.io/badge/license-MIT-263146?style=flat-square">
+</p>
 
-[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+**English** · [中文文档](#中文文档)
 
-大多数人设卡只写了「你是谁」（可爱、傲娇、毒舌），但模型一开口还是客服——
-因为**没写「怎么说话」和「什么时候不说话」**。
+> **Make an AI feel like a group member, not customer support.** Not code — a prompt template
+> distilled from weeks of real group chat. The expensive part is not the prose, it is the
+> "what NOT to do" rules.
 
-这套模板补的就是这两块。
+**Use this if** your persona card says "cute / tsundere / sarcastic" but the model still answers
+like a help desk; or you want boundaries (when to stay silent, what never to say) instead of
+another character sheet.
+
+**Works with:** any chat model (DSH, Claude, GPT, local models). It is plain Markdown.
+
+## Files
+
+| File | Purpose |
+|---|---|
+| `01-identity.md` | Who it is, and what it is not |
+| `02-group-rules.md` | How a group actually talks |
+| `03-speech.md` | Sentence length, punctuation, emoji discipline |
+| `04-blacklist.md` | Things it must never say |
+| `05-tiers.md` | Different behaviour for strangers / friends / close friends |
+| `06-examples.md` | Good vs bad replies, side by side |
+| `07-boundaries.md` | When to stop, refuse, or hand over to a human |
+
+## License
+
+MIT
 
 ---
 
-## 这套插件
+# 中文文档
+
+### 这套插件
 
 | 插件 | 作用 | 依赖 |
 |---|---|---|
@@ -24,7 +48,7 @@
 
 > 除 qzone 外，其余插件都不依赖任何 IM 网关——任何 MCP 客户端（DSH / Claude / Cursor）都能直接接。
 
-## 30 秒看懂差别
+### 30 秒看懂差别
 
 | 场景 | 客服腔（默认） | 群友腔（这套规则） |
 |---|---|---|
@@ -38,7 +62,7 @@
 
 ---
 
-## 目录结构
+### 目录结构
 
 ```
 template/
@@ -58,9 +82,9 @@ examples/
 
 ---
 
-## 怎么用
+### 怎么用
 
-### 最快：整段塞进系统提示词
+#### 最快：整段塞进系统提示词
 
 ```bash
 cat template/01-identity.md template/02-group-rules.md \
@@ -71,7 +95,7 @@ cat template/01-identity.md template/02-group-rules.md \
 
 替换掉 `{{...}}` 占位符，放进角色卡 / `AGENT.md` / system prompt。
 
-### 建议：只改三处
+#### 建议：只改三处
 
 | # | 改什么 | 说明 |
 |---|---|---|
@@ -83,7 +107,7 @@ cat template/01-identity.md template/02-group-rules.md \
 
 ---
 
-## 接进 DSH：三步
+### 接进 DSH：三步
 
 1. 把 `template/` 下 7 个文件按顺序拼成一份（见上面「最快」命令）
 2. 替换掉 `{{...}}` 占位符（身份 / 群脾气 / 分档）
@@ -93,7 +117,7 @@ cat template/01-identity.md template/02-group-rules.md \
 
 > 它是纯文本模板，不依赖任何 MCP 服务或网关——DSH、Claude Desktop、Cursor 都能用。
 
-## 这份东西是怎么来的
+### 这份东西是怎么来的
 
 拿一个真实在线的 QQ 群 AI 伙伴，**跑了几十天、被群友骂了几十次**之后总结出来的：
 哪些话一说就「AI 味爆表」、哪些行为让人立刻出戏、什么时候该闭嘴。
@@ -104,7 +128,7 @@ cat template/01-identity.md template/02-group-rules.md \
 
 ---
 
-## 注意事项
+### 注意事项
 
 | 项 | 说明 |
 |---|---|
@@ -113,12 +137,18 @@ cat template/01-identity.md template/02-group-rules.md \
 | **只管说话，不管调度** | 什么时候说、说给谁，见 [conversation-pacing](../conversation-pacing) |
 | **分代标记** | 同一角色需要不同平台时，用 `## 分条方式 〔一代〕` 这类标题级标记，不要混写 |
 
-## 遇到问题
+### 遇到问题
 
 规则不生效、还是客服腔、话说太短？先看 [TROUBLESHOOTING.md](TROUBLESHOOTING.md)。
 
 ---
 
-## 许可
+### 许可
 
 MIT © 2026 HOHOLI
+
+---
+
+## 检索关键词（给搜索引擎）
+
+人格模板 · 群聊语气 · 边界 · 反客服腔 · persona prompt
