@@ -83,6 +83,16 @@ cat template/01-identity.md template/02-group-rules.md \
 
 ---
 
+## 接进 DSH：三步
+
+1. 把 `template/` 下 7 个文件按顺序拼成一份（见上面「最快」命令）
+2. 替换掉 `{{...}}` 占位符（身份 / 群脾气 / 分档）
+3. 放进 DSH 的 `AGENT.md` 或 agent preset 的 `persona.prefix`
+
+详细说明见 [integration/dsh.md](integration/dsh.md)。
+
+> 它是纯文本模板，不依赖任何 MCP 服务或网关——DSH、Claude Desktop、Cursor 都能用。
+
 ## 这份东西是怎么来的
 
 拿一个真实在线的 QQ 群 AI 伙伴，**跑了几十天、被群友骂了几十次**之后总结出来的：
