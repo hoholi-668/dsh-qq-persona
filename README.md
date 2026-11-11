@@ -28,6 +28,20 @@ another character sheet.
 | `06-examples.md` | Good vs bad replies, side by side |
 | `07-boundaries.md` | When to stop, refuse, or hand over to a human |
 
+## FAQ
+
+**How is this different from a character card?**
+Character cards describe *who* the AI is. This template also specifies *how* it talks and *when it must stay silent* — the part that removes the "customer support" tone.
+
+**Will it make the bot chatty?**
+The opposite: `04-blacklist.md` and `07-boundaries.md` cap length, ban filler, and define when to stop.
+
+**Does it work with non-Chinese models?**
+It is plain Markdown; translate the placeholders and keep the structure.
+
+**How much do I need to change?**
+Replace `{{...}}` placeholders; keep the section order, which is what shapes the behaviour.
+
 ## License
 
 MIT
@@ -148,6 +162,20 @@ cat template/01-identity.md template/02-group-rules.md \
 MIT © 2026 HOHOLI
 
 ---
+
+### FAQ
+
+**和普通角色卡有什么区别？**
+角色卡写「它是谁」；这套还写「它怎么说话」和「什么时候必须闭嘴」——去客服腔的关键在后两块。
+
+**会让人格变话痨吗？**
+相反。`04-blacklist.md` 和 `07-boundaries.md` 限制长度、禁废话、规定何时收口。
+
+**支持非中文模型吗？**
+纯 Markdown，替换占位符、保留结构即可。
+
+**要改多少？**
+只替换 `{{...}}` 占位符；章节顺序别动，那是行为的一部分。
 
 ## 检索关键词（给搜索引擎）
 
